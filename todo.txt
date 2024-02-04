@@ -1,0 +1,29 @@
+date = day month
+use month to display the month frame
+
+algo:
+day +14 = fertile
+if month != feb:
+    if month != all the 30 day months:
+        if day>31:
+            day-= 31
+            month = nextmonth(month)
+    else :
+        if day>30:
+        day-= 30
+        month = nextmonth(month)
+else:
+    if day>29:
+    day-= 29
+    month = nextmonth(month)
+
+
+
+
+def nextmonth():
+    for i in Month ( this is the list with months ):
+        if month != "dec":
+            if Month[i]== month:
+                month= Month[i+1]
+        else:
+            month= jan
